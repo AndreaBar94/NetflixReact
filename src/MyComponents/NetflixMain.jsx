@@ -1,12 +1,16 @@
 import { Component } from 'react';
-import NetflixCarousel from './NetflixCarousel';
+import FantasyCarousel from './FantasyCarousel';
+import ActionComedyCarousel from './ActionComedyCarousel';
+import SuperheroCarousel from './SuperheroCarousel';
 
 class NetflixMain extends Component {
     state = {}
     render(){
         return(
             <main className="container-fluid bg-dark">
-                <NetflixCarousel/>
+                <FantasyCarousel/>
+                <ActionComedyCarousel/>
+                <SuperheroCarousel/>
             </main>
         )
     }

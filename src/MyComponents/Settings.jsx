@@ -1,17 +1,18 @@
 import { Component } from "react"
+import { Container } from "react-bootstrap";
 
 class Settings extends Component {
     render(){
         return(
                     <main className="bg-light">
-                <div className="container py-5">
-                <div className="container border-bottom">
+                <Container className="container py-5">
+                <Container className="container border-bottom">
                     <h3>Account</h3>
-                </div>
+                </Container>
                 <div className="row border-bottom py-3">
                     <div className="col-3">
-                    <div className="container">MEMBERSHIP &amp; BILLING</div>
-                    <div className="container"><button type="button" className="membership btn btn-outline-dark rounded-0">Cancel Membership</button></div>
+                    <Container className="container">MEMBERSHIP &amp; BILLING</Container>
+                    <Container className="container"><button type="button" className="membership btn btn-outline-dark rounded-0">Cancel Membership</button></Container>
                     </div>
                     <div className="col-9">
                     <div className="border-bottom info">
@@ -54,7 +55,7 @@ class Settings extends Component {
                 </div>
                 <div className="row border-bottom py-3">
                     <div className="col-3">
-                    <div className="container"><span>PLAN DETAILS</span></div>
+                    <Container className="container"><span>PLAN DETAILS</span></Container>
                     </div>
                     <div className="col-9">
                     <div className="d-flex justify-content-between">
@@ -78,9 +79,9 @@ class Settings extends Component {
                 </div>
                 <div className="row border-bottom py-3">
                     <div className="col-3">
-                    <div className="container">
+                    <Container className="container">
                         <span>MY PROFILE</span>
-                    </div>
+                    </Container>
                     </div>
                     <div className="col-9">
                     <div className="d-flex justify-content-between">
@@ -105,7 +106,7 @@ class Settings extends Component {
                     </div>
                     </div>
                 </div>
-                </div>
+                </Container>
             </main>
         )
     }

@@ -1,10 +1,11 @@
 import { Component } from 'react';
-import { Col, Row, Spinner } from 'react-bootstrap';
+import { Alert, Col, Row, Spinner } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
 
 class FantasyCarousel extends Component {
     state = {
         error: false,
+        errorMsg: "",
         isLoading: true,
         films: [],
         films2: [],
@@ -24,7 +25,7 @@ class FantasyCarousel extends Component {
                 }
             } catch (error) {
                 alert(error);
-                this.setState({error: true, isLoading: false})
+                this.setState({error: true, errorMsg: error.message, isLoading: false})
             }
 
             try {
@@ -39,7 +40,7 @@ class FantasyCarousel extends Component {
                 }
             } catch (error) {
                 alert(error);
-                this.setState({error: true, isLoading: false})
+                this.setState({error: true, errorMsg: error.message, isLoading: false})
             }
 
             try {
@@ -54,7 +55,7 @@ class FantasyCarousel extends Component {
                 }
             } catch (error) {
                 alert(error);
-                this.setState({error: true, isLoading: false})
+                this.setState({error: true, errorMsg: error.message, isLoading: false})
             }
         }
 
@@ -65,11 +66,16 @@ class FantasyCarousel extends Component {
             <Carousel className="m-5">
                 <Carousel.Item className='mx-auto'>
                     <Row className="justify-content-center g-2">
-                    {this.state.isLoading && !this.state.error && (
-                    <Spinner animation="border" role="status" className="text-light">
-                        <span className="visually-hidden">Loading...</span>
-                    </Spinner>
-                    )}
+                        {/* inserisco lo spinner */}
+                            {this.state.isLoading && !this.state.error && (
+                            <Spinner animation="border" role="status" className="text-light">
+                                <span className="visually-hidden">Loading...</span>
+                            </Spinner>
+                            )}
+                        {/* inserisco l'errore */}
+                            {this.state.error && !this.state.isLoading && (
+                            <Alert variant="danger">{this.state.errorMsg ? this.state.errorMsg : "Errore nel reperire i dati"}</Alert>
+                            )}
                         {this.state.films.map((film) => (
                             <Col xs={true} md={3} lg={2} key={film.imdbID} className="m-3">
                                 <img
@@ -85,11 +91,16 @@ class FantasyCarousel extends Component {
                 </Carousel.Item>
                 <Carousel.Item >
                     <Row className="justify-content-center g-2">
-                    {this.state.isLoading && !this.state.error && (
-                    <Spinner animation="border" role="status" className="text-light">
-                        <span className="visually-hidden">Loading...</span>
-                    </Spinner>
-                    )}
+                        {/* inserisco lo spinner */}
+                            {this.state.isLoading && !this.state.error && (
+                            <Spinner animation="border" role="status" className="text-light">
+                                <span className="visually-hidden">Loading...</span>
+                            </Spinner>
+                            )}
+                        {/* inserisco l'errore */}
+                            {this.state.error && !this.state.isLoading && (
+                            <Alert variant="danger">{this.state.errorMsg ? this.state.errorMsg : "Errore nel reperire i dati"}</Alert>
+                            )}
                         {this.state.films2.map((film2) => (
                             <Col xs={true} md={3} lg={2} key={film2.imdbID} className="m-3">
                                 <img
@@ -105,11 +116,16 @@ class FantasyCarousel extends Component {
                 </Carousel.Item>
                 <Carousel.Item >
                     <Row className="justify-content-center g-2">
-                    {this.state.isLoading && !this.state.error && (
-                    <Spinner animation="border" role="status" className="text-light">
-                        <span className="visually-hidden">Loading...</span>
-                    </Spinner>
-                    )}
+                        {/* inserisco lo spinner */}
+                            {this.state.isLoading && !this.state.error && (
+                            <Spinner animation="border" role="status" className="text-light">
+                                <span className="visually-hidden">Loading...</span>
+                            </Spinner>
+                            )}
+                        {/* inserisco l'errore */}
+                            {this.state.error && !this.state.isLoading && (
+                            <Alert variant="danger">{this.state.errorMsg ? this.state.errorMsg : "Errore nel reperire i dati"}</Alert>
+                            )}
                         {this.state.films3.map((film3) => (
                             <Col xs={true} md={3} lg={2} key={film3.imdbID} className="m-3">
                                 <img

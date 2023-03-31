@@ -2,6 +2,8 @@ import { Component } from 'react';
 import FantasyCarousel from './FantasyCarousel';
 import ActionComedyCarousel from './ActionComedyCarousel';
 import SuperheroCarousel from './SuperheroCarousel';
+// import Settings from './Settings';
+// import Profile from './Profile';
 
 class NetflixMain extends Component {
     state = {}
@@ -11,6 +13,8 @@ class NetflixMain extends Component {
                 <FantasyCarousel/>
                 <ActionComedyCarousel/>
                 <SuperheroCarousel/>
+                {/* <Profile/> */}
+                {/* <Settings/> */}
             </main>
         )
     }

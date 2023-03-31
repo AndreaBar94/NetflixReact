@@ -41,7 +41,7 @@ function NetflixNavbar() {
                                     <Dropdown.Toggle type="button" className="btn btn-secondary dropdown-toggle bg-dark border-dark" data-bs-toggle="dropdown" aria-expanded="false">
                                     <img src={avatar} width="30" height="30" alt="avatar logo"/>
                                     </Dropdown.Toggle>
-                                    <Dropdown.Menu className="dropdown-menu-end bg-dark text-light">
+                                    <Dropdown.Menu className="dropdown-menu-end bg-dark">
                                     <Dropdown.Item><a className="dropdown-item text-light" href="profile.html">Profile</a></Dropdown.Item>
                                     <Dropdown.Item><a className="dropdown-item text-light" href="settings.html">Settings</a></Dropdown.Item>
                                     <Dropdown.Item><a className="dropdown-item text-light" href="#">Log Out</a></Dropdown.Item>

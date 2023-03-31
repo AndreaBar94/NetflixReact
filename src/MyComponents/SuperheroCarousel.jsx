@@ -60,8 +60,8 @@ class SuperheroCarousel extends Component {
     render(){
         return (
             <>
-            <h5 className="text-light ms-4 mt-3">Super Heroes</h5>
-            <Carousel className="my-3">
+            <h5 className="text-light ms-5 mt-4">Super Heroes</h5>
+            <Carousel className="m-5">
                 <Carousel.Item className='mx-auto'>
                     <Row className="justify-content-center g-2">
                     {this.state.isLoading && !this.state.error && (

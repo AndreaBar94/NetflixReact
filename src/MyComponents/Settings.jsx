@@ -5,14 +5,14 @@ class Settings extends Component {
     render(){
         return(
                     <main className="bg-light">
-                <Container className="container py-5">
-                <Container className="container border-bottom">
+                <Container className=" py-5">
+                <Container className=" border-bottom">
                     <h3>Account</h3>
                 </Container>
-                <Row className="row border-bottom py-3">
+                <Row className=" border-bottom py-3">
                     <Col className="col-3">
-                    <Container className="container">MEMBERSHIP &amp; BILLING</Container>
-                    <Container className="container"><button type="button" className="membership btn btn-outline-dark rounded-0">Cancel Membership</button></Container>
+                    <Container >MEMBERSHIP &amp; BILLING</Container>
+                    <Container ><button type="button" className="membership btn btn-outline-dark rounded-0">Cancel Membership</button></Container>
                     </Col>
                     <Col className="col-9">
                     <div className="border-bottom info">
@@ -53,9 +53,9 @@ class Settings extends Component {
                     </div>
                     </Col>
                 </Row>
-                <Row className="row border-bottom py-3">
+                <Row className=" border-bottom py-3">
                     <Col className="col-3">
-                    <Container className="container"><span>PLAN DETAILS</span></Container>
+                    <Container ><span>PLAN DETAILS</span></Container>
                     </Col>
                     <Col className="col-9">
                     <div className="d-flex justify-content-between">
@@ -64,7 +64,7 @@ class Settings extends Component {
                     </div>
                     </Col>
                 </Row>
-                <Row className="row border-bottom py-3">
+                <Row className=" border-bottom py-3">
                     <Col className="col-3">
                     <span className="container">SETTINGS</span>
                     </Col>
@@ -77,9 +77,9 @@ class Settings extends Component {
                     <div><button type="button" className="btn border border-0 btn-outline-primary">Sign out of all devices</button></div>
                     </Col>
                 </Row>
-                <Row className="row border-bottom py-3">
+                <Row className=" border-bottom py-3">
                     <div className="col-3">
-                    <Container className="container">
+                    <Container >
                         <span>MY PROFILE</span>
                     </Container>
                     </div>

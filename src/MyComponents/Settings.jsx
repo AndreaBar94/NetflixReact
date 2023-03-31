@@ -10,11 +10,11 @@ class Settings extends Component {
                     <h3>Account</h3>
                 </Container>
                 <Row className=" border-bottom py-3">
-                    <Col className="col-3">
+                    <Col lg={3} >
                     <Container >MEMBERSHIP &amp; BILLING</Container>
                     <Container ><button type="button" className="membership btn btn-outline-dark rounded-0">Cancel Membership</button></Container>
                     </Col>
-                    <Col className="col-9">
+                    <Col lg={9} >
                     <div className="border-bottom info">
                         <div className="d-flex justify-content-between">
                         <div><span>email</span></div>
@@ -54,10 +54,10 @@ class Settings extends Component {
                     </Col>
                 </Row>
                 <Row className=" border-bottom py-3">
-                    <Col className="col-3">
+                    <Col lg={3}>
                     <Container ><span>PLAN DETAILS</span></Container>
                     </Col>
-                    <Col className="col-9">
+                    <Col lg={9}>
                     <div className="d-flex justify-content-between">
                         <div><span>Premium ultrahd</span></div>
                         <div><button type="button" className="btn border border-0 btn-outline-primary">Change plan</button></div>
@@ -65,10 +65,10 @@ class Settings extends Component {
                     </Col>
                 </Row>
                 <Row className=" border-bottom py-3">
-                    <Col className="col-3">
+                    <Col lg={3}>
                     <span className="container">SETTINGS</span>
                     </Col>
-                    <Col className="col-9">
+                    <Col lg={9}>
                     <div><button type="button" className="btn border border-0 btn-outline-primary">Parental controls</button></div>
                     <div><button type="button" className="btn border border-0 btn-outline-primary">Test participation</button></div>
                     <div><button type="button" className="btn border border-0 btn-outline-primary">Manage download devices</button></div>
@@ -78,12 +78,12 @@ class Settings extends Component {
                     </Col>
                 </Row>
                 <Row className=" border-bottom py-3">
-                    <div className="col-3">
+                    <Col lg={3}>
                     <Container >
                         <span>MY PROFILE</span>
                     </Container>
-                    </div>
-                    <Col className="col-9">
+                    </Col>
+                    <Col lg={9}>
                     <div className="d-flex justify-content-between">
                         <div><span>Strive Student</span></div>
                         <div><button type="button" className="btn border border-0 btn-outline-primary">manage profiles</button></div>

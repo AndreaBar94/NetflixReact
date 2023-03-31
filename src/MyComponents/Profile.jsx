@@ -12,12 +12,12 @@ class Profile extends Component{
                     </Container>
                     <Container >
                     <Row className=" borderLine">
-                        <Col className="col-4">
+                        <Col lg={4}>
                         <Container >
                             <img src={avatar} alt="avatar logo" className="img-fluid" />
                         </Container>
                         </Col>
-                        <Col className="col-8">
+                        <Col lg={8}>
                         <Container className=" borderLine py-3 ps-0">
                             <Container ><p className="bg-secondary text-light p-2">Strive Student</p></Container>
                             <Container ><p className="mb-1">Language:</p></Container>

@@ -70,7 +70,7 @@ class SuperheroCarousel extends Component {
                     </Spinner>
                     )}
                         {this.state.films.map((film) => (
-                            <Col xs={6} lg={2} key={film.imdbID} className="m-3">
+                            <Col xs={true} md={3} lg={2} key={film.imdbID} className="m-3">
                                 <img
                                 className="d-block"
                                 height="300px"
@@ -90,7 +90,7 @@ class SuperheroCarousel extends Component {
                     </Spinner>
                     )}
                         {this.state.films2.map((film2) => (
-                            <Col xs={6} lg={2} key={film2.imdbID} className="m-3">
+                            <Col xs={true} md={3} lg={2} key={film2.imdbID} className="m-3">
                                 <img
                                 className="d-block"
                                 height="300px"
@@ -110,7 +110,7 @@ class SuperheroCarousel extends Component {
                     </Spinner>
                     )}
                         {this.state.films3.map((film3) => (
-                            <Col xs={6} lg={2} key={film3.imdbID} className="m-3">
+                            <Col xs={true} md={3} lg={2} key={film3.imdbID} className="m-3">
                                 <img
                                 className="d-block"
                                 height="300px"

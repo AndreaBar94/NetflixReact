@@ -4,6 +4,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
 class SuperheroCarousel extends Component {
     state = {
+        error: false,
         isLoading: true,
         films: [],
         films2: [],
@@ -19,11 +20,11 @@ class SuperheroCarousel extends Component {
                     this.setState({isLoading: false})
                 } else {
                     console.log("error");
-                    this.setState({isLoading: false})
+                    this.setState({error: true, isLoading: false})
                 }
             } catch (error) {
                 alert(error);
-                this.setState({isLoading: false})
+                this.setState({error: true, isLoading: false})
             }
 
             try {
@@ -34,11 +35,11 @@ class SuperheroCarousel extends Component {
                     this.setState({isLoading: false})
                 } else {
                     console.log("error");
-                    this.setState({isLoading: false})
+                    this.setState({error: true, isLoading: false})
                 }
             } catch (error) {
                 alert(error);
-                this.setState({isLoading: false})
+                this.setState({error: true, isLoading: false})
             }
 
             try {
@@ -49,11 +50,11 @@ class SuperheroCarousel extends Component {
                     this.setState({isLoading: false})
                 } else {
                     console.log("error");
-                    this.setState({isLoading: false})
+                    this.setState({error: true, isLoading: false})
                 }
             } catch (error) {
                 alert(error);
-                this.setState({isLoading: false})
+                this.setState({error: true, isLoading: false})
             }
         }
 

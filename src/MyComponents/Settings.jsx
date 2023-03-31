@@ -1,5 +1,5 @@
 import { Component } from "react"
-import { Container } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 
 class Settings extends Component {
     render(){
@@ -9,12 +9,12 @@ class Settings extends Component {
                 <Container className="container border-bottom">
                     <h3>Account</h3>
                 </Container>
-                <div className="row border-bottom py-3">
-                    <div className="col-3">
+                <Row className="row border-bottom py-3">
+                    <Col className="col-3">
                     <Container className="container">MEMBERSHIP &amp; BILLING</Container>
                     <Container className="container"><button type="button" className="membership btn btn-outline-dark rounded-0">Cancel Membership</button></Container>
-                    </div>
-                    <div className="col-9">
+                    </Col>
+                    <Col className="col-9">
                     <div className="border-bottom info">
                         <div className="d-flex justify-content-between">
                         <div><span>email</span></div>
@@ -51,39 +51,39 @@ class Settings extends Component {
                         <div><button type="button" className="btn border border-0 btn-outline-primary">where to buy gift cards</button></div>
                         </div>
                     </div>
-                    </div>
-                </div>
-                <div className="row border-bottom py-3">
-                    <div className="col-3">
+                    </Col>
+                </Row>
+                <Row className="row border-bottom py-3">
+                    <Col className="col-3">
                     <Container className="container"><span>PLAN DETAILS</span></Container>
-                    </div>
-                    <div className="col-9">
+                    </Col>
+                    <Col className="col-9">
                     <div className="d-flex justify-content-between">
                         <div><span>Premium ultrahd</span></div>
                         <div><button type="button" className="btn border border-0 btn-outline-primary">Change plan</button></div>
                     </div>
-                    </div>
-                </div>
-                <div className="row border-bottom py-3">
-                    <div className="col-3">
+                    </Col>
+                </Row>
+                <Row className="row border-bottom py-3">
+                    <Col className="col-3">
                     <span className="container">SETTINGS</span>
-                    </div>
-                    <div className="col-9">
+                    </Col>
+                    <Col className="col-9">
                     <div><button type="button" className="btn border border-0 btn-outline-primary">Parental controls</button></div>
                     <div><button type="button" className="btn border border-0 btn-outline-primary">Test participation</button></div>
                     <div><button type="button" className="btn border border-0 btn-outline-primary">Manage download devices</button></div>
                     <div><button type="button" className="btn border border-0 btn-outline-primary">Activate a device</button></div>
                     <div><button type="button" className="btn border border-0 btn-outline-primary">Recent devices streaming activity</button></div>
                     <div><button type="button" className="btn border border-0 btn-outline-primary">Sign out of all devices</button></div>
-                    </div>
-                </div>
-                <div className="row border-bottom py-3">
+                    </Col>
+                </Row>
+                <Row className="row border-bottom py-3">
                     <div className="col-3">
                     <Container className="container">
                         <span>MY PROFILE</span>
                     </Container>
                     </div>
-                    <div className="col-9">
+                    <Col className="col-9">
                     <div className="d-flex justify-content-between">
                         <div><span>Strive Student</span></div>
                         <div><button type="button" className="btn border border-0 btn-outline-primary">manage profiles</button></div>
@@ -104,8 +104,8 @@ class Settings extends Component {
                         <div><button type="button" className="btn border border-0 btn-outline-primary">Subtitle appearance</button></div>
                         <div />
                     </div>
-                    </div>
-                </div>
+                    </Col>
+                </Row>
                 </Container>
             </main>
         )

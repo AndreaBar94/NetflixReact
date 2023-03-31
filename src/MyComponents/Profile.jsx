@@ -1,5 +1,5 @@
 import { Component } from "react"
-import { Container, Dropdown } from "react-bootstrap";
+import { Col, Container, Dropdown, Row } from "react-bootstrap";
 import avatar from '../assets/avatar.png';
 
 class Profile extends Component{
@@ -11,13 +11,13 @@ class Profile extends Component{
                     <h3 className="borderLine text-light fs-1">Edit Profile</h3>
                     </Container>
                     <Container className="container">
-                    <div className="row borderLine">
-                        <div className="col-4">
+                    <Row className="row borderLine">
+                        <Col className="col-4">
                         <Container className="container">
                             <img src={avatar} alt="avatar logo" className="img-fluid" />
                         </Container>
-                        </div>
-                        <div className="col-8">
+                        </Col>
+                        <Col className="col-8">
                         <Container className="container borderLine py-3 ps-0">
                             <Container className="container"><p className="bg-secondary text-light p-2">Strive Student</p></Container>
                             <Container className="container"><p className="mb-1">Language:</p></Container>
@@ -40,9 +40,9 @@ class Profile extends Component{
                             <Container className="container py-1 d-flex align-items-center"><p className>Maturity Settings:</p></Container>
                             <Container className="container py-1 d-flex align-items-center"><p className="text-light bg-secondary bg-opacity-50 px-2">ALL MATURITY RATINGS</p></Container>
                             <Container className="container py-1 d-flex align-items-center"><p className="text-light text-opacity-75">Show titles of <span className="fw-bold">all maturity ratings </span>for this profile.</p></Container>
-                            <div className="container"><button type="button" className="editBtn btn btn-outline-secondary rounded-0">EDIT</button></div>
+                            <Container className="container"><button type="button" className="editBtn btn btn-outline-secondary rounded-0">EDIT</button></Container>
                         </Container>
-                        <div className="container py-3 ps-0">
+                        <Container className="container py-3 ps-0">
                             <Container className="container"><p>Autoplay controls</p></Container>
                             <Container className="container">
                             <input className="form-check-input border-secondary mt-0 bg-dark border border-1 rounded-0 p-3" type="checkbox" defaultValue aria-label="Checkbox for following text input" id="check1" />
@@ -52,9 +52,9 @@ class Profile extends Component{
                             <input type="checkbox" className="form-check-input border-secondary mt-0 bg-dark border border-1 rounded-0 p-3" defaultValue aria-label="Checkbox for following text input" id="check2" />
                             <label className="mt-1" htmlFor="check2">Autoplay previews while browsing on all devices.</label>
                             </Container>
-                        </div>
-                        </div>
-                    </div>
+                        </Container>
+                        </Col>
+                    </Row>
                     <Container className="container py-3 d-flex justify-content-evenly">
                         <button type="button" className="btnOptProfile btn btn-outline-secondary rounded-0 px-5">SAVE</button>
                         <button type="button" className="btnOptProfile btn btn-outline-secondary rounded-0 px-5">CANCEL</button>

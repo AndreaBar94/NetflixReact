@@ -1,7 +1,7 @@
 import Card from 'react-bootstrap/Card';
 import { useParams, useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import { Badge, Col } from 'react-bootstrap';
+import { Badge, Col, Row } from 'react-bootstrap';
 
 let authorization = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDE0MzI5NGY4MWI0MjAwMTM5YjI3ZWQiLCJpYXQiOjE2ODA1MjQ2NDksImV4cCI6MTY4MTczNDI0OX0.niPd6nu1dFizpA8FFK5zdC_prg92GwBgNRGPoAgDQ4g";
 
@@ -61,21 +61,27 @@ const MovieDetails = () => {
 	};
 
 	return (
-        <Col md={3}>
-            <Card>
-                <Card.Img variant="top" src={movieDetails.Poster} />
-                <Card.Body>
-                    <Card.Title>{movieDetails.Title}</Card.Title>
-                    <Card.Text>{movieDetails.Plot}</Card.Text>
+        <Row>
+            <Col md={4}>
+                    <img src={movieDetails.Poster} alt="film poster" className='img-fluid p-4' />
+            </Col>
+            <Col md={8}>
+                <div className='p-4'>
+                    <h4 className='text-light'>{movieDetails.Title}</h4>
+                    <p className='text-light'>{movieDetails.Plot}</p>
+                    <div>
                         {movieComments.map((singleComment) => 
-                            <Card.Text className='bg-secondary text-light m-1 p-2 rounded'>
-                                <Badge className='m-1'>Rate: {singleComment.rate}</Badge>
-                                {singleComment.comment}
-                            </Card.Text>
-                        )}
-                </Card.Body>
-            </Card>
-        </Col>
+                                    <p className='bg-secondary text-light m-1 p-2 rounded'>
+                                        <Badge className='m-1'>Rate: {singleComment.rate}</Badge>
+                                        {singleComment.comment}
+                                    </p>
+                                )}
+                    </div>
+                </div>
+                
+            </Col>
+        </Row>
+        
 		
 	);
 };

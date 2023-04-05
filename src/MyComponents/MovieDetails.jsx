@@ -2,7 +2,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { useParams, useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import { Col } from 'react-bootstrap';
+import { Badge, Col } from 'react-bootstrap';
 
 let authorization = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDE0MzI5NGY4MWI0MjAwMTM5YjI3ZWQiLCJpYXQiOjE2ODA1MjQ2NDksImV4cCI6MTY4MTczNDI0OX0.niPd6nu1dFizpA8FFK5zdC_prg92GwBgNRGPoAgDQ4g";
 
@@ -72,6 +72,7 @@ const MovieDetails = () => {
                     <Card.Text>{movieDetails.Plot}</Card.Text>
                         {movieComments.map((singleComment) => 
                             <Card.Text className='bg-secondary text-light m-1 p-2 rounded'>
+                                <Badge className='m-1'>Rate: {singleComment.rate}</Badge>
                                 {singleComment.comment}
                             </Card.Text>
                         )}

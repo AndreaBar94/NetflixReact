@@ -4,7 +4,6 @@ import NetflixNavbar from './MyComponents/NetflixNavbar';
 import NetflixMain from './MyComponents/NetflixMain';
 import NetflixFooter from './MyComponents/NetflixFooter';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import FantasyCarousel from "./MyComponents/FantasyCarousel";
 import SuperheroCarousel from "./MyComponents/SuperheroCarousel";
 import MovieDetails from "./MyComponents/MovieDetails";
 

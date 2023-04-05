@@ -6,6 +6,8 @@ import NetflixFooter from './MyComponents/NetflixFooter';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import SuperheroCarousel from "./MyComponents/SuperheroCarousel";
 import MovieDetails from "./MyComponents/MovieDetails";
+import ActionComedyCarousel from "./MyComponents/ActionComedyCarousel";
+import FantasyCarousel from "./MyComponents/FantasyCarousel";
 
 function App() {
   return (
@@ -14,7 +16,13 @@ function App() {
             <NetflixNavbar/>
               <Routes>
                 <Route path="/" element={<NetflixMain/>}/>
-                <Route path="/tv-shows" element={<SuperheroCarousel/>}/>
+                <Route path="/tv-shows" element={
+                  <>
+                  <SuperheroCarousel/>
+                  <ActionComedyCarousel/>
+                  <FantasyCarousel/>
+                  </>
+                }/>
                 <Route path="/movie-details/:movieID" element={<MovieDetails/>}/>
               </Routes>
             <NetflixFooter/>

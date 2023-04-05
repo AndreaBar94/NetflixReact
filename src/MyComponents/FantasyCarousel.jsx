@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import { Alert, Col, Row, Spinner } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
+import { Link } from 'react-router-dom';
 
 class FantasyCarousel extends Component {
     state = {
@@ -78,6 +79,7 @@ class FantasyCarousel extends Component {
                             )}
                         {this.state.films.map((film) => (
                             <Col xs={true} md={3} lg={2} key={film.imdbID} className="m-3">
+                                <Link to={"/movie-details/" + film.imdbID}>
                                 <img
                                 className="d-block"
                                 height="300px"
@@ -85,6 +87,8 @@ class FantasyCarousel extends Component {
                                 src={film.Poster} 
                                 alt={film.Title}
                                 />
+                                </Link>
+                                
                             </Col>
                         ))}
                     </Row>
@@ -103,13 +107,16 @@ class FantasyCarousel extends Component {
                             )}
                         {this.state.films2.map((film2) => (
                             <Col xs={true} md={3} lg={2} key={film2.imdbID} className="m-3">
-                                <img
+                                <Link to={"/movie-details/" + film2.imdbID}>
+                                    <img
                                 className="d-block"
                                 height="300px"
                                 width="200px"
                                 src={film2.Poster} 
                                 alt={film2.Title}
                                 />
+                                </Link>
+                                
                             </Col>
                         ))}
                     </Row>
@@ -128,6 +135,7 @@ class FantasyCarousel extends Component {
                             )}
                         {this.state.films3.map((film3) => (
                             <Col xs={true} md={3} lg={2} key={film3.imdbID} className="m-3">
+                                <Link to={"/movie-details/" + film3.imdbID}>
                                 <img
                                 className="d-block"
                                 height="300px"
@@ -135,6 +143,8 @@ class FantasyCarousel extends Component {
                                 src={film3.Poster} 
                                 alt={film3.Title}
                                 />
+                                </Link>
+                                
                             </Col>
                         ))}
                     </Row>

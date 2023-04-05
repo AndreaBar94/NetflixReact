@@ -1,4 +1,3 @@
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { useParams, useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
@@ -9,13 +8,11 @@ let authorization = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDE
 const MovieDetails = () => {
 	const [movieDetails, setMovieDetails] = useState([]);
 	const [movieComments, setMovieComments] = useState([]);
-	// const [isLoading, setIsLoading] = useState(true);
 	const [error, setError] = useState(false);
 	const [errorMsg, setErrorMsg] = useState('');
 
 	const params = useParams();
 	const location = useLocation();
-
 	console.log('PARAMS:', params);
 	console.log('LOCATION:', location);
 	console.log('LOCATION:', location.pathname);

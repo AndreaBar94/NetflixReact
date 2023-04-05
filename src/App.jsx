@@ -8,6 +8,8 @@ import SuperheroCarousel from "./MyComponents/SuperheroCarousel";
 import MovieDetails from "./MyComponents/MovieDetails";
 import ActionComedyCarousel from "./MyComponents/ActionComedyCarousel";
 import FantasyCarousel from "./MyComponents/FantasyCarousel";
+import Profile from "./MyComponents/Profile";
+import Settings from "./MyComponents/Settings";
 
 function App() {
   return (
@@ -18,12 +20,14 @@ function App() {
                 <Route path="/" element={<NetflixMain/>}/>
                 <Route path="/tv-shows" element={
                   <>
-                  <SuperheroCarousel/>
-                  <ActionComedyCarousel/>
-                  <FantasyCarousel/>
+                    <SuperheroCarousel/>
+                    <ActionComedyCarousel/>
+                    <FantasyCarousel/>
                   </>
-                }/>
+                  }/>
                 <Route path="/movie-details/:movieID" element={<MovieDetails/>}/>
+                <Route path="/profile" element={<Profile/>}/>
+                <Route path="/settings" element={<Settings/>}/>
               </Routes>
             <NetflixFooter/>
           </BrowserRouter>

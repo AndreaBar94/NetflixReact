@@ -46,8 +46,8 @@ function NetflixNavbar() {
                                     <img src={avatar} width="30" height="30" alt="avatar logo"/>
                                     </Dropdown.Toggle>
                                     <Dropdown.Menu className="dropdown-menu-end bg-dark border-secondary">
-                                    <Dropdown.Item className="dropBtn"><a className="dropdown-item text-light dropBtn" href="profile.html">Profile</a></Dropdown.Item>
-                                    <Dropdown.Item className="dropBtn"><a className="dropdown-item text-light dropBtn" href="settings.html">Settings</a></Dropdown.Item>
+                                    <Dropdown.Item className="dropBtn"><Link className="dropdown-item text-light dropBtn" to="/profile">Profile</Link></Dropdown.Item>
+                                    <Dropdown.Item className="dropBtn"><Link className="dropdown-item text-light dropBtn"to="/settings">Settings</Link></Dropdown.Item>
                                     <Dropdown.Item className="dropBtn"><a className="dropdown-item text-light dropBtn" href="#">Log Out</a></Dropdown.Item>
                                     </Dropdown.Menu>
                                 </Dropdown>

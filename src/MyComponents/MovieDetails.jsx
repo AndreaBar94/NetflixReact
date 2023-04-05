@@ -78,7 +78,6 @@ const MovieDetails = () => {
                                 )}
                     </div>
                 </div>
-                
             </Col>
         </Row>
         

@@ -3,8 +3,12 @@ import netflix_logo from '../assets/netflix_logo.png';
 import avatar from '../assets/avatar.png';
 import Navbar from 'react-bootstrap/Navbar';
 import Dropdown from 'react-bootstrap/Dropdown';
+import { Link, useLocation } from 'react-router-dom';
 
 function NetflixNavbar() {
+
+    const location = useLocation();
+
   return (
     <Navbar className="bg-dark" expand="lg">
                 <div className="container-fluid">
@@ -13,12 +17,12 @@ function NetflixNavbar() {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="navbar-nav me-auto mb-2 mb-lg-0">
-                        <Nav.Link className="nav-item">
+                        <Link className={`nav-link ${location.pathname === "/" ? "active text-light fw-bold" : ""}`} to="/">
                         Home
-                        </Nav.Link>
-                        <Nav.Link className="nav-item">
+                        </Link>
+                        <Link className={`nav-link ${location.pathname === "/tv-shows" ? "active text-light fw-bold" : ""}`} to="/tv-shows">
                         TV Shows
-                        </Nav.Link>
+                        </Link>
                         <Nav.Link className="nav-item">
                             Movies
                         </Nav.Link>
